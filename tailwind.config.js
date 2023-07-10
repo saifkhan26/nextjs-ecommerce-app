@@ -14,9 +14,8 @@ module.exports = {
       },
     },
     colors: {
-      "rich-black": "#0c202c",
-      "black-bean": "#41180c",
-      "butter-scotch": "#d98d34",
+      "rich-blue": "#1E3448",
+      "bright-rose": "#FF5C81",
       "lavender-blush": "#fae8ec",
     },
   },
