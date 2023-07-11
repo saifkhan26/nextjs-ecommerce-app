@@ -17,6 +17,7 @@ module.exports = {
       "rich-blue": "#1E3448",
       "bright-rose": "#FF5C81",
       "lavender-blush": "#fae8ec",
+      white: "#fff",
     },
   },
   plugins: [],
