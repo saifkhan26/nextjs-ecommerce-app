@@ -1,18 +1,18 @@
 "use client";
 import Image from "next/image";
 
-export default function ProductCard({
+const ProductCard = ({
   brand,
   category,
   description,
   image,
   name,
   price,
-}) {
+}) => {
   return (
     <div className="bg-white rounded-3xl p-7">
       <div className="h-60 relative bg-bright-rose rounded-3xl">
-        <Image src={''} layout="fill"/>
+        <Image src="" layout="fill"/>
       </div>
       <div className="grid grid-cols-3 mt-6">
         <div className="col-span-2">
@@ -26,3 +26,4 @@ export default function ProductCard({
     </div> 
   );
 }
+export default ProductCard

@@ -1,7 +1,9 @@
 "use client";
 import store from "@store/store";
-import { Provider, useDispatch } from "react-redux";
+import { Provider } from "react-redux";
 
-export default function ProductProvider({ children }) {
+const ProductProvider = ({ children }) => {
   return <Provider store={store}>{children}</Provider>;
 }
+
+export default ProductProvider

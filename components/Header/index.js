@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import Button from "@components/Button";
+import { Button } from "@components/Button";
+import shoppingCartIcon from '@public/icons/shopping_cart.svg'
 
 export default function Header() {
   return (
@@ -16,7 +17,7 @@ export default function Header() {
             alignItems: "center",
           }}>
           <Image
-            src={require("@public/icons/shopping_cart.svg")}
+            src={shoppingCartIcon}
             width={22}
             height={22}
           />

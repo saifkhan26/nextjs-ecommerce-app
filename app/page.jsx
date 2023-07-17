@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { getProducts } from "@store/slices/productSlice";
 import ProductCard from "@components/ProductCard";
 
-export default function Home() {
+const Home = () => {
   const dispatch = useDispatch();
   const { products } = useSelector((state) => state.products);
   useEffect(() => {
@@ -25,3 +25,4 @@ export default function Home() {
     </>
   );
 }
+export default Home
