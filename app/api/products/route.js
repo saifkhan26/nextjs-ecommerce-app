@@ -20,6 +20,7 @@ export async function GET(req, res) {
     return new Response("Failed to Fetch all Products", { status: 500 });
   }
 }
+
 export async function POST(req, res) {
   try {
     await connectToDB()
