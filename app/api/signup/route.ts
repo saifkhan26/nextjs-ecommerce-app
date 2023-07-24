@@ -9,7 +9,8 @@ import { NextResponse } from "next/server";
 export async function POST(request: NextRequest) {
   try {
     await connectToDB()
-    const { username, email, password } = await request.json()
+    const body = await request.json()
+    const { username, email, password } = body
     console.log({ username, email, password }, "😅")
     return NextResponse.json({ data: 'data' }, { status: 201 })
   } catch (error) {
