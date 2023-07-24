@@ -1,10 +1,10 @@
-'use client'
+'use client';
 import { useState } from 'react'
-import { Input } from '@components/Input'
-import { Textarea } from '@components/TextArea'
-import { Dropdown } from '@components/Dropdown'
-import { ImageUpload } from '@components/ImageUpload'
-import { Button } from '@components/Button'
+import { Input } from "../../../components/Input"
+import { Textarea } from "../../../components/TextArea"
+import { Dropdown } from "../../../components/Dropdown"
+import { ImageUpload } from "../../../components/ImageUpload"
+import { Button } from "../../../components/Button"
 import axios from 'axios'
 
 const CreateProduct = () => {

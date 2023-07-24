@@ -11,15 +11,15 @@ const ProductCard = ({
 }) => {
   return (
     <div className="bg-white rounded-3xl p-7">
-      <div className="h-60 relative bg-bright-rose rounded-3xl">
-        <Image src="" layout="fill"/>
+      <div className="h-60 relative bg-bright-rose rounded-3xl overflow-hidden">
+        <Image src={image} layout="fill" className="object-cover object-center"/>
       </div>
-      <div className="grid grid-cols-3 mt-6">
-        <div className="col-span-2">
+      <div className="flex justify-between mt-6">
+        <div className="">
           <p className="text-2xl mb-4">{name}</p>
-          <p className="text-sm">{description}</p>
+          <p className="text-sm truncate">{description}</p>
         </div>
-        <div className="self-end justify-self-end">
+        <div className="self-end">
           <button className="btn-primary">Add To Cart</button>
         </div>
       </div>

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@components/Button";
-import shoppingCartIcon from '@public/icons/shopping_cart.svg'
+import shoppingCartIcon from '../../public/icons/shopping_cart.svg'
 
 export default function Header() {
   return (
@@ -22,7 +21,7 @@ export default function Header() {
             height={22}
           />
         </Link>
-        <Button>Login</Button>
+        <Link className="btn-primary" href="/login">Login</Link>
       </div>
     </header>
   );
