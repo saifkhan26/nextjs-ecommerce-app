@@ -29,10 +29,10 @@ export default function SignUp() {
       <div className="min-h-screen flex flex-col justify-center">
         <div className="max-w-4xl w-full mx-auto grid gap-4">
           <h1 className='text-6xl text-center mb-4 font-semibold'>Sign Up</h1>
-          <Input value={username} setValue={setUsername} placeholder="Enter Username.." label='Username'/>
-          <Input value={email} setValue={setEmail} placeholder="Enter Email.." label='Email Address'/>
-          <Input value={password} setValue={setPassword} placeholder="Enter Password..." label="Password"/>
-          <Input value={confirmPassword} setValue={setConfirmPassword} placeholder="Enter Password again..." label="Confirm Password"/>
+          <Input value={username} type="text" setValue={setUsername} placeholder="Enter Username.." label='Username'/>
+          <Input value={email} type="email" setValue={setEmail} placeholder="Enter Email.." label='Email Address'/>
+          <Input value={password} type="password" setValue={setPassword} placeholder="Enter Password..." label="Password"/>
+          <Input value={confirmPassword} type="password" setValue={setConfirmPassword} placeholder="Enter Password again..." label="Confirm Password"/>
           <Button className="btn-primary py-2 mt-4" onClick={submitHandler}>Sign Up</Button>
         </div>
       </div>
