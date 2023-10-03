@@ -18,15 +18,15 @@ const Home = () => {
           </div>
           <div className="relative grid content-center">
             <div className="max-w-lg h-96 w-full relative justify-self-end before:h-14 before:w-14 before:rounded-lg before:bg-rich-blue before:absolute before:contents sm:before:right-full before:right-4 before:mr-4 lg:before:bottom-0 before:bottom-4 before:z-[1] lg:mb-0 mb-6">
-              <Image src={bannerImageOne} layout="fill" className="rounded-3xl overflow-hidden object-cover"/>
+              <Image src={bannerImageOne} layout="fill" className="rounded-3xl overflow-hidden object-cover" />
             </div>
             <div className="max-w-lg  h-96 w-full lg:-ms-4 mt-4 relative before:h-14 before:w-14 before:rounded-lg before:bg-rich-blue before:absolute before:contents sm:before:left-full before:left-4 before:ml-4 lg:before:top-0 before:top-4 before:z-[1]">
-              <Image src={bannerImageTwo} layout="fill" className="rounded-3xl overflow-hidden object-cover"/>
+              <Image src={bannerImageTwo} layout="fill" className="rounded-3xl overflow-hidden object-cover" />
             </div>
           </div>
         </div>
       </section>
-      <Suspense fallback={<Loading/>}>
+      <Suspense fallback={<Loading />}>
         <ProductFeed />
       </Suspense>
     </>
